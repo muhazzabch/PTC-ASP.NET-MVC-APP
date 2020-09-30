@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title | </title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="~/assetsHomeHome/img/favicon.png" rel="icon">
+    <link href="~/assetsHomeHome/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Home CSS Files -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet">
+@*  <link href="~/assetsHome/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">*@
+    <link href="~/assetsHome/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="~/assetsHome/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="~/assetsHome/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="~/assetsHome/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="~/assetsHome/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="~/assetsHome/vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="~/assetsHome/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-xl-10 d-flex align-items-center">
+                    <h1 class="logo mr-auto"><a href="index.html">EarningTime<span>.</span></a></h1>
+                    <!-- Uncomment below if you prefer to use an image logo -->
+                    <!-- <a href="index.html" class="logo mr-auto"><img src="~/imgHome/logo.png" alt=""></a>-->
+
+                    <nav class="nav-menu d-none d-lg-block">
+                        <ul>
+                            <li class="active"><a href="#header">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#pricing">Packages</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav><!-- .nav-menu -->
+
+                    <a href="#about" class="get-started-btn scrollto">Login</a>
+                    <a href="#about" class="get-started-btn scrollto">Register</a>
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- End Header -->
+    <div id="pageContent">
+        @RenderBody()
+    </div>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>Earning With Us<span>.</span></h3>
+                        <p>
+                            Our innovative features for<br>
+                            members give them flexibility<br>
+                            and more earning potencial.<br><br>
+                            <strong>Phone:</strong> +1 5589 55488 55<br>
+                            <strong>Email:</strong> info@example.com<br>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i>@Html.ActionLink("Home", "Index", new { controller = "Home", area = "Common" })</li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">FAQ</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Support</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">News</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Payment Proofs</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Follow Us</h4>
+                        <br><br>
+                        <div class="social-links text-center text-md-left pt-3 pt-md-0">
+                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        </div>
+                        <br>
+                        <div class="copyright">
+                            &copy; Copyright <strong><span>CatchUp</span></strong>. All Rights Reserved
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+    <!-- Main JS Files -->
+    <script src="~/Scripts/jquery-3.5.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+    <script src="~/assetsHome/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="~/assetsHome/vendor/php-email-form/validate.js"></script>
+    <script src="~/assetsHome/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="~/assetsHome/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="~/assetsHome/vendor/counterup/counterup.min.js"></script>
+    <script src="~/assetsHome/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="~/assetsHome/vendor/venobox/venobox.min.js"></script>
+    <script src="~/assetsHome/vendor/aos/aos.js"></script>
+
+    <!-- Home JS File -->
+    <script src="~/assetsHome/js/main.js"></script>
+
+</body>
+</html>
